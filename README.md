@@ -1,6 +1,4 @@
-# MongoMango
-
-
+# Using MongoDB
 
 
 ### Big Idea 

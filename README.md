@@ -39,7 +39,7 @@ Keys can be left blank.
 
 #### this but not that:
 
-```
+``` python
 query_doc : {'attr' : 'value', 'attr2' : {'$ne': 'value'}}
 db.collection.count_documents(query_doc)
 cb.collection.find_one(filter_doc(query_doc))
@@ -48,7 +48,7 @@ cb.collection.find_one(filter_doc(query_doc))
 ### Value can take one of many posibilies:
 
 Query all documents where < attr > is in a list of possibilies
-```
+``` python
 db.collection.count_documents({
 	'attr' : {
 		'$in' : ['var1','var2']

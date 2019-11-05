@@ -29,10 +29,10 @@ A query as a document.
 
 #### Flexible Query Operators 
 operators, examples:
-'$in'  - in 
-'$gt'  - greater than
-'$lte' - less than or equal
-'$ne'  - not equal
+* '$in'  - in 
+* '$gt'  - greater than
+* '$lte' - less than or equal
+* '$ne'  - not equal
 
 ### Filter with a Query Document
 
@@ -63,6 +63,6 @@ db.collection.count_documents({
 
 Other Helpful Ideas
 
-Idea 1: Think of Mongo as a Database of Nested Dictionaries
-Idea 2: MongoDB consists of collections, which are like tables in SQL.
-Idea 3: Each DB contains admin, local, system.indices collections for record keeping purposes.
+* Idea 1: Think of Mongo as a Database of Nested Dictionaries
+* Idea 2: MongoDB consists of collections, which are like tables in SQL.
+* Idea 3: Each DB contains admin, local, system.indices collections for record keeping purposes.

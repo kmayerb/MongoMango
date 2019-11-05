@@ -21,8 +21,15 @@ db = client[db_name]
 
 ## Find Documents with Documents 
 
-A query as a document. The query docuement takes the same form as the document within as collection. 
+A query as a document. The query document takes the same form as the document within a collection. 
 Keys can be left blank.
+
+
+``` python
+query_doc : {'attr' : 'value'}
+db.collection.count_documents(query_doc)
+db.collection.find_one(filter_doc(query_doc))
+```
 
 ### Flexible Query Operators 
 operators, examples:

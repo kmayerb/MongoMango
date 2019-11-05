@@ -21,31 +21,25 @@ db = client[db_name]
 
 ## Find Documents with Documents 
 
+A query as a document. The query docuement takes the same form as the document within as collection. 
+Keys can be left blank.
 
-### The Concept of A Query
-A query as a document. 
-
-#### Flexible Query Operators 
+### Flexible Query Operators 
 operators, examples:
 * '$in'  - in 
 * '$gt'  - greater than
 * '$lte' - less than or equal
 * '$ne'  - not equal
 
-### Filter with a Query Document
-
-The query docuement takes the same form as the document within as collection. 
-Keys can be left blank.
-
 #### this but not that:
 
 ``` python
 query_doc : {'attr' : 'value', 'attr2' : {'$ne': 'value'}}
 db.collection.count_documents(query_doc)
-cb.collection.find_one(filter_doc(query_doc))
+db.collection.find_one(filter_doc(query_doc))
 ```
 
-### Value can take one of many posibilies:
+#### Value can take one of many posibilies:
 
 Query all documents where < attr > is in a list of possibilies
 ``` python
@@ -54,8 +48,6 @@ db.collection.count_documents({
 		'$in' : ['var1','var2']
 		}})
 ```
-
-
 
 
 

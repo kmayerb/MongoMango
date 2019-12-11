@@ -1,6 +1,6 @@
 # Mongo - Joining Information Across Collections
 
-### Example Subjects Table
+### Example Subjects Collection
 
 
 ```python
@@ -23,7 +23,7 @@ subjects = \
  "sex" : "Male"}]
 ```
 
-### Example Samples Table
+### Example Samples Collection
 
 
 ```python

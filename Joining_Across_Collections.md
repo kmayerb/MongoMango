@@ -99,7 +99,7 @@ mycol = mydb['subjects']
 
 ## Joining Subjects
 
-Let's say we want all sample_ids associated with each subject. This is like a one to many join in SQL.
+Let's say we want query the subjects colleciton and also include all the sample_ids associated with each subject returned in the query. This is like a one to many join in SQL.
 
 ### Very Naive Approach
 
